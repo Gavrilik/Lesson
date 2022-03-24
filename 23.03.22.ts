@@ -42,7 +42,7 @@ const res = /([А-ЯЁа-яё]+)\s([А-ЯЁа-яё]+)/;
 const str = "Яблоки круглые и яблоки сочные.";
 const str1 = "Олег Гаврилик";
 const newstr = str.replace(re, "апельсины"); //замена в строке str яблоки на апельсины.
-const newstr1 = str1.replace(res, "$2, $1"); // меняет местами слова в строке.
+const newstr1 = str1.replace(res, "$2 $1"); // меняет местами слова в строке.
 console.log(newstr);
 console.log(newstr1);
 
@@ -54,8 +54,3 @@ console.log(typeof asd); // тип asd - объект
 const num = asd.valueOf(); // возвращает примитивное значение объекта
 console.log(num); // 1
 console.log(typeof num); // тип будет строка
-
-
-
-
-//задание 

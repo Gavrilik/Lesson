@@ -101,3 +101,4 @@ let numberMethods = [
 console.log(arrayRandom(arrayMethods));
 console.log(arrayRandom(stringMethods));
 console.log(arrayRandom(numberMethods));
+
