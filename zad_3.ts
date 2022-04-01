@@ -7,7 +7,7 @@
 Посчитайте количество итераций, необходимых для этого (итерация - это проход цикла), и запишите его в переменную num. 
 */
 
-//1
+//1 для массив объектов или массив массивов
 const mass4 = [1, 2, 5, 9, 13, 4, 10];
 const check = (element: number) => element == 11;
 if (mass4.some(check)) {
@@ -15,15 +15,9 @@ if (mass4.some(check)) {
   console.log("нету");
 }
 
-const mass5 = [1, 2, 5, 9, 13, 4, 10];
-const cek = (element: number) => element == 11;
-if (mass5.find(cek)) {
-} else {
-  console.log("нет");
-}
-//правильный метод
+//правильный метод для примитивных массивов
 const mass6 = [1, 2, 5, 9, 13, 4, 10];
-if (mass5.includes(11)) {
+if (mass6.includes(11)) {
 } else {
   console.log("нет");
 }

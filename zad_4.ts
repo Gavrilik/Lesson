@@ -6,10 +6,10 @@
 let lern = ["я", "учу", "javascript", "!"];
 console.log(lern.join("+"));
 
-//2
+//2 split
 let test = "var_test_text";
 let test1 =
-  test.slice(0, 1).toUpperCase() +
+  test.slice(0, 1) +
   test.slice(1, 2) +
   test.slice(2, 3) +
   test.slice(4, 5).toUpperCase() +
@@ -19,6 +19,26 @@ let test1 =
   test.slice(9, 10).toUpperCase() +
   test.slice(10);
 console.log(test1);
+
+let test2 = "var_test_text";
+let asdf = test2.split("_");
+
+const mapToCamelCase = (str: string) => {
+  return str
+    .split("_")
+    .map((word: string, index: number) => {
+      if (index === 0) {
+        return word;
+      }
+      const firstLetter = word[0].toUpperCase();
+      word = word.substring(1);
+
+      return firstLetter + word;
+    })
+    .join("");
+};
+
+console.log(mapToCamelCase("var_test_text"));
 
 //3
 let js = "я учу javascript";
